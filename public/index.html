@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog E-dex</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Dog E-dex</title>
 </head>
+
 <body>
+  <header>
     <h1>Dog E-dex</h1>
+    <div class="banner">
+      <div class="banner__content">
+        <div class="banner__text">
+          <strong>A Companion Dog Selection Tool</strong>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <div id="breed">
+      <select id="breed-select">
+        <option value="">Choose a Dog Breed</option>
+        <!-- Options will be added by JS -->
+      </select>
+    </div>
+
+    <div id="dog-info">
+      <img id="dog-image" src="" alt="" style="max-width: 400px; margin-top: 20px;" />
+    </div>
+
+    <section class="information">
+        <p>
+            You've now decided you want to get a dog for a companion.
+            The next step is researching possible dog breeds and characteristics.
+        </p>
     
+        <p>
+            This tool will provide you a variety of dog breeds to browse 
+            and may help narrow your choices before you move to the next step.
+       </p>
+    </section>
+      <script src="./js/main.js"></script>
 </body>
 </html>
