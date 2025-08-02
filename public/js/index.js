@@ -1,17 +1,13 @@
-async function fetchBreeds() {
+async function loadBreeds() {
   try {
-    const response = await fetch("https://api.thedogapi.com/v1/breeds", {
-      headers: {
-        "x-api-key": apiKey
-      }
-    });
-
+    const response = await fetch("/api/v1/breeds");
     const data = await response.json();
     createBreedmenu(data);
   } catch (error) {
-    console.error("Failed to fetch breeds:", error);
+    console.error(error);
   }
 }
+
 
 function createBreedmenu(breeds) {
   const select = document.getElementById("breed-select");
@@ -23,35 +19,31 @@ function createBreedmenu(breeds) {
     select.appendChild(option);
   });
 
-  select.addEventListener("change", (event) => {
+  // Add event listener to load image on change
+  select.addEventListener("change", async (event) => {
     const breedId = event.target.value;
     if (breedId) {
-      fetchBreedImage(breedId);
+      await fetchBreedImage(breedId);
     }
   });
 }
 
 async function fetchBreedImage(breedId) {
   try {
-    const response = await fetch(`https://api.thedogapi.com/v1/images/search?breed_id=${breedId}`, {
-      headers: {
-        "x-api-key": apiKey
-      }
-    });
-
+    const response = await fetch(`/api/breed-image/${breedId}`);
     const data = await response.json();
-    const img = document.getElementById("dog-image");
+    const imgElement = document.getElementById("dog-image");
 
     if (data.length > 0 && data[0].url) {
-      img.src = data[0].url;
-      img.alt = data[0].breeds[0]?.name || "Dog";
+      imgElement.src = data[0].url;
+      imgElement.alt = data[0].breeds[0]?.name || "Dog";
     } else {
-      img.src = "";
-      img.alt = "No image found";
+      imgElement.src = "";
+      imgElement.alt = "No image found";
     }
   } catch (error) {
-    console.error("Error fetching image:", error);
+      console.error("Error fetching breed image:", error);
   }
 }
 
-document.addEventListener("DOMContentLoaded", fetchBreeds);
+document.addEventListener("DOMContentLoaded", loadBreeds);
