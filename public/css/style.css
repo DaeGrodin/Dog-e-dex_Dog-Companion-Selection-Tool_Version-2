@@ -68,6 +68,28 @@ select {
   padding-top: 20px;
 }
 
+.dog-fact-box {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 600px;
+}
+
+#fact-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #5630DB;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#dog-fact {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
 .landing-images {
   display: flex;
   justify-content: center;

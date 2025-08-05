@@ -47,3 +47,16 @@ async function fetchBreedImage(breedId) {
 }
 
 document.addEventListener("DOMContentLoaded", loadBreeds);
+
+document.getElementById("fact-button").addEventListener("click", async () => {
+  try {
+    const response = await fetch("https://dogapi.dog/api/v2/facts");
+    const data = await response.json();
+    const fact = data.data[0].attributes.body;
+    document.getElementById("dog-fact").textContent = fact;
+
+  } catch (err) {
+    console.error("Error fetching dog fact:", err);
+    document.getElementById("dog-fact").textContent = "Couldn't fetch a fact. Try again!";
+  }
+});
