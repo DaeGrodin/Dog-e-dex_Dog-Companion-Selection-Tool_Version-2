@@ -112,3 +112,23 @@ main {
   font-style: italic;
 }
 
+@media (max-width: 600px) {
+  #breed {
+    padding: 0 1rem;
+  }
+
+  #breed-select {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #dog-image {
+    width: 100%;
+  }
+
+    .information {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+  }
+}
+

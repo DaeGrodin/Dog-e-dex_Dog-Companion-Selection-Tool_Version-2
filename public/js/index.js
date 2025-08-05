@@ -47,6 +47,7 @@ async function fetchBreedImage(breedId) {
 
 document.addEventListener("DOMContentLoaded", loadBreeds);
 
+
 document.getElementById("fact-button").addEventListener("click", async () => {
   try {
     const response = await fetch("https://dogapi.dog/api/v2/facts");
