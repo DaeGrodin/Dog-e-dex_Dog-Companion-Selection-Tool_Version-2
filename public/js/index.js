@@ -8,7 +8,6 @@ async function loadBreeds() {
   }
 }
 
-
 function createBreedmenu(breeds) {
   const select = document.getElementById("breed-select");
 
