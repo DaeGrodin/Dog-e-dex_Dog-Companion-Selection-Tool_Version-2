@@ -12,7 +12,7 @@ It introduces them to different breeds of dogs and what they look like. They can
 
 ## Capstone Requirements Features
 
-### Requirements and Implementation 
+### Requirements and Implementation
 
 #### Retrieve data from a third party API
 - Integrated the Dog API to pull a breed image database and random dog facts
@@ -33,34 +33,42 @@ It introduces them to different breeds of dogs and what they look like. They can
 
 What you will need to install/obtain prior to running this app:
 
-1. Obtain a Dog Api Key - https://thedogapi.com/ 
-- Click Get your Api Key 
+1. **Obtain a Dog Api Key** - https://thedogapi.com/
+- Click Get your Api Key
 - Click Get Free Access
-- Fill out the form and click submit 
+- Fill out the form and click submit
 - Check your email for your API Key
 
-2. Visual Studio Code - https://code.visualstudio.com/ 
+
+2. **Visual Studio Code** - https://code.visualstudio.com/
 - Download the appropriate version for your operating system on your pc or mac and follow the prompts
 
-3. Clone this Repository 
+
+3. **Clone this Repository**
 - https://github.com/DaeGrodin/Dog-e-dex_Dog-Companion-Selection-Tool_Version-2
 
-4. Navigate to project
+
+4. **Navigate to project**
 - Type into your terminal, cd Dog-e-dex_Dog-Companion-Selection-Tool_Version 2 in your terminal
 
-5. Install Express package (express.js using node.js module) - https://nodejs.org/en/download in your terminal
+
+5. **Install Express package** (express.js using node.js module) - https://nodejs.org/en/download in your terminal
 - Download the appropriate version for your operating system on your pc or mac and follow the prompts (you can also check your system if you have this by typing -node -v and npm -v in your terminal)
-- Initialize node by typing npm init -y in your terminal (git bash) which will Create a package.json
+- Initialize node by typing npm init -y in your terminal (git bash) which will create a package.json
 - Type into terminal npm install express which will create "dependencies"
 
-6. Create .env file at root level
+
+6. **Create .env file at root level**
 - In file, type DOG_API_KEY=Your Access Key
 
-7. Start the server 
-- Type into your terminal, node server.js
 
-8. Open application into your browser
+7. **Start the server**
+- Type into your terminal, npm run dev
+
+
+8. **Open application into your browser**
 - http: localhost:5001
+
 
 ## Licenses
 
