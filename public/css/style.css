@@ -8,10 +8,10 @@ body {
 header {
   background-color: #5630DB;
   color: black;
-  padding: 20px 0;
+  padding: 1.5rem 0 3rem 0;
+  position: relative;
   width: 100%;
-  position: sticky;
-  top: 0;
+  text-align: center;;
 }
 
 h1 {
@@ -20,18 +20,54 @@ h1 {
   font-size: 2rem;
 }
 
+.banner {
+  background-color: #ffe9c5;
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
 .banner__content {
+    background-color: #ffe9c5;
     max-width: 500px;
-    padding: 16px;
+    padding: 0 1rem;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
 }
 
 .banner__text {
-    flex-grow: 1;
-    line-height: 1.5;
-    font-size: 1rem;
+    color: 333;
+    font-size: 1.2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000; 
+  transition: color 0.3s ease;;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #666;
 }
 
 main {
@@ -112,6 +148,15 @@ main {
   font-style: italic;
 }
 
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #f4e8d5;
+  margin-top: 2rem;
+}
+
 /* Mobile setting */
 @media (max-width: 480px) {
   #breed {
@@ -186,7 +231,7 @@ main {
 }
 
 /* About Page Styling */
-main.information {
+.about-page main.information {
   max-width: 800px;
   margin: 2rem auto;
   padding: 1rem;
@@ -198,35 +243,30 @@ main.information {
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-main.information section {
+.about-page main.information section {
   margin-bottom: 2rem;
 }
 
-main.information h2 {
+.about-page main.information h2 {
   margin-bottom: 0.5rem;
   color: #444;
   font-size: 1.5rem;
 }
 
-main.information p {
+.about-page main.information p {
   font-size: 1rem;
+}
+
+.about-page footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #f4e8d5;
+  margin-top: 2rem;
 }
 
 
 .about-page .banner {
-  background-color: #5630DB;
-}
-
-@media (max-width: 600px) {
-  main.information {
-    padding: 1rem;
-  }
-
-  main.information h2 {
-    font-size: 1.2rem;
-  }
-
-  main.information p {
-    font-size: 0.95rem;
-  }
+  background-color: #ffe9c5;
 }
