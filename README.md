@@ -72,7 +72,7 @@ What you will need to install/obtain prior to running this app:
 
 ## Licenses
 
-This project can be shared to those who are interested in getting a new dog as a way to introduce them to dog breeds.
+This project can be shared with those who are interested in getting a new dog as a way to introduce them to dog breeds.
 
 ## Credits
 - Google for general questions - stack overflow, MDN, youtube videos for visual understanding
