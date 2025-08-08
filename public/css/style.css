@@ -266,7 +266,13 @@ main {
   margin-top: 2rem;
 }
 
-
 .about-page .banner {
   background-color: #ffe9c5;
+}
+
+.about-photo {
+  max-width: 200px;
+  border-radius: 50%;
+  margin: 1rem auto;
+  display: block;
 }
