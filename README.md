@@ -75,5 +75,5 @@ What you will need to install/obtain prior to running this app:
 This project can be shared to those who are interested in getting a new dog as a way to introduce them to dog breeds.
 
 ## Credits
-- Google for general questions - stack overflow, MDN
-- ChatGPT - concepts with fetching api, troubleshooting
+- Google for general questions - stack overflow, MDN, youtube videos for visual understanding
+- ChatGPT - concepts with fetching api, troubleshooting issues which was helpful in learning 
