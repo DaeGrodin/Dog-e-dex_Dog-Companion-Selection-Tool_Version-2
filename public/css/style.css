@@ -5,6 +5,15 @@ body {
   text-align: center;
 }
 
+.page-wrapper {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  background-color: white;
+}
+
 header {
   background-color: #5630DB;
   color: black;
